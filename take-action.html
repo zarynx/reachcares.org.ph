@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Take Action | Reach Cares</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header class="navbar">
+			<a href="index.html" class="logo"><img src="images/logo.png" alt="Reach Cares Logo"></a>
+			<nav id="navigation">
+				<ul>
+					<li><a href="what-we-do.html">What We Do</a></li>
+					<li><a href="who-we-are.html">Who We Are</a></li>
+					<li><a href="take-action.html" aria-current="page">Take Action</a></li>
+					<li><a href="take-action.html#donate" class="donate-button">DONATE NOW<span>→</span></a></li>
+				</ul>
+			</nav>
+			<button class="menu-button" id="menuButton" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</header>
+
+		<main>
+			<nav class="breadcrumb" aria-label="Breadcrumb">
+				<a href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 2 12h3v9h5v-6h4v6h5v-9h3z"/></svg></a>
+
+				<h1>Take Action</h1>
+			</nav>
+
+			<section class="page-content">
+				<!-- BE ONE OF US -->
+				<a href="be-one-of-us.html" class="action-banner">
+					<img src="images/take-action.jpg" alt="">
+
+					<span class="action-banner-bar">
+						Be one of us
+
+						<span>⟶</span>
+					</span>
+				</a>
+
+				<p>
+					There are many ways to help. Become a member and be part of the
+					projects we run with communities: serve, gain leadership and
+					volunteer experience, and grow while helping others in need.
+				</p>
+
+				<p>
+					You can also support our work with a donation. Every gift helps
+					provide resources where they are needed most.
+				</p>
+
+				<!-- DONATION FORM -->
+				<form class="donation-form" id="donate" novalidate>
+					<!-- STEP 1: DONATION -->
+					<section class="form-step" aria-labelledby="stepDonationTitle">
+						<h2 class="form-step-title" id="stepDonationTitle" tabindex="-1">
+							Donation
+
+							<span>Step 1 of 3</span>
+						</h2>
+
+						<div class="form-step-body">
+							<fieldset class="form-group">
+								<legend>How would you like to donate?*</legend>
+
+								<div class="form-option">
+									<label for="frequencyOneTime">One-time</label>
+									<input type="radio" id="frequencyOneTime" name="frequency" value="One-time" required>
+								</div>
+
+								<div class="form-option">
+									<label for="frequencyAnnual">Annual</label>
+									<input type="radio" id="frequencyAnnual" name="frequency" value="Annual" required>
+								</div>
+							</fieldset>
+
+							<fieldset class="form-group">
+								<legend>What amount would you like to donate?*</legend>
+
+								<div class="form-option">
+									<label for="amount5000">₱5,000</label>
+									<input type="radio" id="amount5000" name="amount" value="5000" required>
+								</div>
+
+								<div class="form-option">
+									<label for="amount1000">₱1,000</label>
+									<input type="radio" id="amount1000" name="amount" value="1000" required>
+								</div>
+
+								<div class="form-option">
+									<label for="amount500">₱500</label>
+									<input type="radio" id="amount500" name="amount" value="500" required>
+								</div>
+
+								<div class="form-option">
+									<label for="amount100">₱100</label>
+									<input type="radio" id="amount100" name="amount" value="100" required>
+								</div>
+
+								<div class="form-option">
+									<label for="ownAmountToggle">Choose your own amount</label>
+									<input type="checkbox" id="ownAmountToggle">
+								</div>
+
+								<div class="amount-input">
+									<span>₱</span>
+
+									<input type="number" id="ownAmount" name="ownAmount" min="1" step="1" inputmode="numeric" aria-label="Your own amount in pesos" disabled>
+								</div>
+							</fieldset>
+						</div>
+
+						<button class="form-next" type="button" data-next>
+							Next Step
+
+							<span>⟶</span>
+						</button>
+					</section>
+
+					<!-- STEP 2: CONTACT DETAILS -->
+					<section class="form-step" aria-labelledby="stepContactTitle" hidden>
+						<h2 class="form-step-title" id="stepContactTitle" tabindex="-1">
+							Contact Details
+
+							<span>Step 2 of 3</span>
+						</h2>
+
+						<div class="form-step-body">
+							<button class="form-back" type="button" data-back>← Back</button>
+
+							<fieldset class="form-group">
+								<legend>Salutation</legend>
+
+								<div class="form-options-inline">
+									<div class="form-option">
+										<label for="salutationSir">Sir</label>
+										<input type="radio" id="salutationSir" name="salutation" value="Sir">
+									</div>
+
+									<div class="form-option">
+										<label for="salutationMadam">Madam</label>
+										<input type="radio" id="salutationMadam" name="salutation" value="Madam">
+									</div>
+
+									<div class="form-option">
+										<label for="salutationNone">Prefer not to say</label>
+										<input type="radio" id="salutationNone" name="salutation" value="Prefer not to say">
+									</div>
+								</div>
+							</fieldset>
+
+							<div class="form-field">
+								<label for="firstName">First Name*</label>
+
+								<input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+							</div>
+
+							<div class="form-row">
+								<div class="form-field">
+									<label for="surname">Surname*</label>
+
+									<input type="text" id="surname" name="surname" autocomplete="family-name" required>
+								</div>
+
+								<div class="form-field">
+									<label for="suffix">Suffix</label>
+
+									<input type="text" id="suffix" name="suffix" autocomplete="honorific-suffix">
+								</div>
+							</div>
+
+							<div class="form-field">
+								<label for="email">Email*</label>
+
+								<input type="email" id="email" name="email" autocomplete="email" required>
+							</div>
+						</div>
+
+						<button class="form-next" type="button" data-next>
+							Next Step
+
+							<span>⟶</span>
+						</button>
+					</section>
+
+					<!-- STEP 3: PAYMENT -->
+					<section class="form-step" aria-labelledby="stepPaymentTitle" hidden>
+						<h2 class="form-step-title" id="stepPaymentTitle" tabindex="-1">
+							Payment
+
+							<span>Step 3 of 3</span>
+						</h2>
+
+						<div class="form-step-body">
+							<button class="form-back" type="button" data-back>← Back</button>
+
+							<img class="payment-qr" src="images/payment-qr.png" alt="Payment QR code">
+
+							<p class="form-help" id="donationSummary"></p>
+
+							<p class="form-help">
+								Scan the QR code with your e-wallet or banking app, send
+								your donation, then enter the reference ID from your receipt.
+							</p>
+
+							<div class="form-field">
+								<label for="referenceId">Reference ID*</label>
+
+								<input type="text" id="referenceId" name="referenceId" autocomplete="off" required>
+							</div>
+						</div>
+
+						<button class="form-next form-submit" type="submit">DONATE NOW</button>
+					</section>
+
+					<!-- THANK YOU -->
+					<div class="form-success" id="donationSuccess" tabindex="-1" hidden>
+						<h2>Thank you!</h2>
+
+						<p id="donationSuccessText"></p>
+					</div>
+				</form>
+
+				<p>
+					Have a question about donating or volunteering? Read our
+					<a class="text-link" href="faq.html">FAQs</a> or
+					<a class="text-link" href="contact.html">contact us</a>.
+				</p>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-content">
+				<!-- EXPLORE -->
+				<div class="footer-column">
+					<h3>Explore</h3>
+
+					<ul class="footer-links">
+						<li><a href="who-we-are.html">About Us</a></li>
+						<li><a href="what-we-do.html">Projects</a></li>
+						<li><a href="take-action.html#donate">Donate</a></li>
+						<li><a href="be-one-of-us.html">Volunteer</a></li>
+					</ul>
+				</div>
+
+				<!-- SUPPORT -->
+				<div class="footer-column">
+					<h3>Support</h3>
+
+					<ul class="footer-links">
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="faq.html">FAQs</a></li>
+					</ul>
+				</div>
+
+				<!-- SOCIAL MEDIA -->
+				<div class="footer-column social-column">
+					<h3>Stay Connected</h3>
+
+					<p>Follow our work and see how your support creates change.</p>
+
+					<ul class="social-links">
+						<li>
+							<a href="#">
+								<img src="images/instagram.svg" alt="Instagram">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/x.svg" alt="X">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/youtube.svg" alt="YouTube">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/REACH-Cares-Nueva-Ecija/">
+								<img src="images/facebook.svg" alt="Facebook">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="legal-links">
+				<li><a href="terms.html">Terms and Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="refund.html">Refund Policy</a></li>
+			</ul>
+
+			<p class="footer-description">
+				REACH Cares is a youth-led organization dedicated to supporting communities and creating opportunities.<br>
+				Together, we turn compassion into action and work toward a better future for everyone.
+			</p>
+
+			<p class="copyright">
+				© 2026 Reach Cares. All rights reserved.
+			</p>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
